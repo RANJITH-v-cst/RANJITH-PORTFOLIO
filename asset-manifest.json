@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/RANJITH-PORTFOLIO/static/css/main.e6c13ad2.css",
-    "main.js": "/RANJITH-PORTFOLIO/static/js/main.06ba7456.js",
+    "main.js": "/RANJITH-PORTFOLIO/static/js/main.e659fc83.js",
     "static/js/453.7a75fab6.chunk.js": "/RANJITH-PORTFOLIO/static/js/453.7a75fab6.chunk.js",
     "static/media/profile.jpg": "/RANJITH-PORTFOLIO/static/media/profile.47008b3c6059c7ad8f65.jpg",
     "index.html": "/RANJITH-PORTFOLIO/index.html",
     "main.e6c13ad2.css.map": "/RANJITH-PORTFOLIO/static/css/main.e6c13ad2.css.map",
-    "main.06ba7456.js.map": "/RANJITH-PORTFOLIO/static/js/main.06ba7456.js.map",
+    "main.e659fc83.js.map": "/RANJITH-PORTFOLIO/static/js/main.e659fc83.js.map",
     "453.7a75fab6.chunk.js.map": "/RANJITH-PORTFOLIO/static/js/453.7a75fab6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.06ba7456.js"
+    "static/js/main.e659fc83.js"
   ]
 }
