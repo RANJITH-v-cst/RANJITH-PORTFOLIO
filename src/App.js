@@ -425,7 +425,7 @@ export default function Portfolio() {
                 {icon:"📞",label:"Phone",value:"6379845643"},
                 {icon:"📍",label:"Location",value:"Sathyamangalam, Tamil Nadu, India"},
                 {icon:"🎓",label:"Education",value:"SNS College of Engineering"},
-                {icon:"💼",label:"Role",value:".NET Full-Stack Developer (Fresher)"},
+                {icon:"💼",label:"Role",value:"Software Developer"},
               ].map(item=>(
                 <div key={item.label} style={{
                   background:"#12121e",border:"1px solid rgba(123,47,247,0.2)",borderRadius:10,
