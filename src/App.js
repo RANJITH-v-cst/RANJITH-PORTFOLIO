@@ -347,6 +347,16 @@ export default function Portfolio() {
             <div style={{position:"absolute",left:mob?6:8,top:0,bottom:0,width:2,background:"linear-gradient(to bottom,#7b2ff7,transparent)"}}/>
             {[
               {
+                role:"Software Developer",company:"Advent Systems",
+                points: [
+  "Developed and maintained web applications using Python and MERN stack technologies.",
+  "Worked on Tally ERP customization using TDL and generated reports with Advent TReports.",
+  "Designed and managed databases, ensuring efficient data handling and performance.",
+  "Implemented cloud-based solutions and handled deployment processes.",
+  "Optimized performance, debugged issues, and delivered solutions collaboratively.",
+],
+              },
+              {
                 role:"Software Engineer Intern",company:"Wise Work Company",
                 points:[
                   "Designed & developed web apps using Blazor and .NET technologies.",
@@ -446,7 +456,7 @@ export default function Portfolio() {
         borderTop:"1px solid rgba(123,47,247,0.12)",
         color:"#505070",fontSize:13,
       }}>
-        <p>Designed & Built by <span style={{color:ACC}}>Ranjith V</span> · .NET Full-Stack Developer</p>
+        <p>Designed & Built by <span style={{color:ACC}}>Ranjith V</span> · Software Developer</p>
         <p style={{marginTop:5,fontSize:12}}>© 2026 Ranjith V. All rights reserved.</p>
       </footer>
     </div>
