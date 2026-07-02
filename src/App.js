@@ -347,7 +347,7 @@ export default function Portfolio() {
             <div style={{position:"absolute",left:mob?6:8,top:0,bottom:0,width:2,background:"linear-gradient(to bottom,#7b2ff7,transparent)"}}/>
             {[
               {
-                role:"Software Developer",company:"Advent Systems",
+                role:"Software Developer",company:"Advent Systems (Present)",
                 points: [
   "Developed and maintained web applications using Python and MERN stack technologies.",
   "Worked on Tally ERP customization using TDL and generated reports with Advent TReports.",
