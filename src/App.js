@@ -92,46 +92,188 @@ const PROJECTS = [
   },
 ];
 
+const CERT_BASE = `${process.env.PUBLIC_URL || ""}/certificates`;
+
 const CERTIFICATES = [
   {
-    title: "Tally Prime & .0",
-    issuer: "EduTrack",
-    year: "2026",
-    file: "/certificates/tally-prime.pdf",
-    icon: "📜",
-    color: "#ff6b35"
+    title: "Fundamentals of Digital Marketing",
+    issuer: "Google Digital Garage",
+    year: "2024",
+    file: `${CERT_BASE}/google-digital-garage.pdf`,
+    type: "pdf",
+    icon: "🌐",
+    color: "#4285f4",
+    skills: "Digital Marketing, SEO, Analytics"
   },
   {
-    title: "Tally Prime With WhatsApp",
-    issuer: "EduTrack",
-    year: "2026",
-    file: "/certificates/tally-whatsapp.pdf",
+    title: "Product Management MBA",
+    issuer: "Product Manager MBA (Balaji Rao)",
+    year: "Jan 2024",
+    file: `${CERT_BASE}/product-management-mba.jpg`,
+    type: "image",
+    icon: "💼",
+    color: "#e11d48",
+    skills: "Product Strategy, Roadmapping, Agile"
+  },
+  {
+    title: "TallyPrime 7.0 Certification",
+    issuer: "Tally Education / EduTrack",
+    year: "2024",
+    file: `${CERT_BASE}/tally-prime-7.pdf`,
+    type: "pdf",
+    icon: "📊",
+    color: "#ff6b35",
+    skills: "TallyPrime, Accounting, TDL Systems"
+  },
+  {
+    title: "TallyPrime With WhatsApp 2.0",
+    issuer: "Tally Education / EduTrack",
+    year: "2024",
+    file: `${CERT_BASE}/tally-whatsapp-2.pdf`,
+    type: "pdf",
     icon: "💬",
-    color: "#4db33d"
+    color: "#25d366",
+    skills: "WhatsApp Business API, Tally Automation"
   },
   {
-    title: "NPTEL Edge Computing",
-    issuer: "NPTEL",
-    year: "2025",
-    file: "/certificates/edge-computing.pdf",
-    icon: "☁️",
-    color: "#00c6ff"
+    title: "Magic of Tally: Design Principles",
+    issuer: "Tally Solutions",
+    year: "2024",
+    file: `${CERT_BASE}/tally-design-principles.pdf`,
+    type: "pdf",
+    icon: "✨",
+    color: "#ff9f1c",
+    skills: "TDL Architecture, UI & Form Customization"
   },
   {
-    title: "NPTEL Programming In Java",
-    issuer: "NPTEL",
+    title: "MERN Stack Development",
+    issuer: "Full Stack Specialization",
+    year: "2024",
+    file: `${CERT_BASE}/mern-stack.pdf`,
+    type: "pdf",
+    icon: "⚛️",
+    color: "#00d8ff",
+    skills: "MongoDB, Express.js, React, Node.js"
+  },
+  {
+    title: "Programming In Java",
+    issuer: "NPTEL / IIT Kharagpur",
     year: "2023",
-    file: "/certificates/java.pdf",
+    file: `${CERT_BASE}/java-programming.pdf`,
+    type: "pdf",
     icon: "☕",
-    color: "#f7d02c"
+    color: "#f59e0b",
+    skills: "Core Java, OOPs, Multithreading, Collections"
   },
   {
-    title: "Foundational C# With Microsoft",
-    issuer: "FreeCodeCamp",
-    year: "Dec-2022",
-    file: "/certificates/csharp.pdf",
-    icon: "🏅",
-    color: "#a78bfa"
+    title: "Cloud Computing",
+    issuer: "NPTEL / IIT",
+    year: "2024",
+    file: `${CERT_BASE}/cloud-computing.pdf`,
+    type: "pdf",
+    icon: "☁️",
+    color: "#06b6d4",
+    skills: "Cloud Architecture, Virtualization, Distributed Systems"
+  },
+  {
+    title: "AI & ML Nano Degree Course",
+    issuer: "AI & ML Specialization",
+    year: "2024",
+    file: `${CERT_BASE}/ai-ml-nanodegree.pdf`,
+    type: "pdf",
+    icon: "🧠",
+    color: "#8b5cf6",
+    skills: "Artificial Intelligence, Deep Learning, PyTorch"
+  },
+  {
+    title: "Machine Learning Certification",
+    issuer: "Machine Learning Specialization",
+    year: "2024",
+    file: `${CERT_BASE}/machine-learning.pdf`,
+    type: "pdf",
+    icon: "🤖",
+    color: "#ec4899",
+    skills: "Supervised & Unsupervised Learning, Scikit-Learn"
+  },
+  {
+    title: "Natural Language Processing (NLP)",
+    issuer: "NLP Specialization",
+    year: "2024",
+    file: `${CERT_BASE}/nlp.pdf`,
+    type: "pdf",
+    icon: "🗣️",
+    color: "#10b981",
+    skills: "Text Processing, Sentiment Analysis, Transformers"
+  },
+  {
+    title: "Data Science Specialization",
+    issuer: "Data Science Academy",
+    year: "2024",
+    file: `${CERT_BASE}/data-science.pdf`,
+    type: "pdf",
+    icon: "📈",
+    color: "#3b82f6",
+    skills: "Data Analysis, Pandas, NumPy, Predictive Modeling"
+  },
+  {
+    title: "Data Analytics Certification",
+    issuer: "Professional Data Analytics",
+    year: "2024",
+    file: `${CERT_BASE}/data-analytics.pdf`,
+    type: "pdf",
+    icon: "📉",
+    color: "#6366f1",
+    skills: "Exploratory Data Analysis, SQL, Data Cleaning"
+  },
+  {
+    title: "Microsoft Power BI Certification",
+    issuer: "Business Intelligence Specialist",
+    year: "2024",
+    file: `${CERT_BASE}/power-bi.pdf`,
+    type: "pdf",
+    icon: "📊",
+    color: "#facc15",
+    skills: "Power BI, DAX Calculations, Data Modeling"
+  },
+  {
+    title: "Power BI Comprehensive Course",
+    issuer: "BI Training Academy",
+    year: "2024",
+    file: `${CERT_BASE}/power-bi-course.pdf`,
+    type: "pdf",
+    icon: "📊",
+    color: "#eab308",
+    skills: "Power Query, Interactive Dashboards, KPIs"
+  },
+  {
+    title: "Git Version Control",
+    issuer: "DevOps & Source Code Management",
+    year: "2023",
+    file: `${CERT_BASE}/git-version-control.pdf`,
+    type: "pdf",
+    icon: "🔀",
+    color: "#f97316",
+    skills: "Git, Branching Strategies, Conflict Resolution"
+  },
+  {
+    title: "Git & GitHub Master Course",
+    issuer: "Git Specialist Program",
+    year: "2023",
+    file: `${CERT_BASE}/git-course.pdf`,
+    type: "pdf",
+    icon: "🐙",
+    color: "#cbd5e1",
+    skills: "GitHub Collaboration, PRs, Workflow Automation"
+  },
+  {
+    title: "Wipro Certified Programme",
+    issuer: "Wipro TalentNext",
+    year: "2024",
+    file: `${CERT_BASE}/wipro.pdf`,
+    type: "pdf",
+    icon: "🏢",
+    color: "#0284c7",
+    skills: "Enterprise Software Engineering, Java, Databases"
   }
 ];
 
@@ -198,6 +340,7 @@ export default function Portfolio() {
   const [active, setActive] = useState("Home");
   const [menu, setMenu] = useState(false);
   const [mob, setMob] = useState(false);
+  const [selectedCert, setSelectedCert] = useState(null);
   const title = useTypewriter([
     "Software Developer",
     ".NET Full-Stack Developer",
@@ -212,6 +355,24 @@ export default function Portfolio() {
     window.addEventListener("resize", fn);
     return () => window.removeEventListener("resize", fn);
   }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setSelectedCert(null);
+      }
+    };
+    if (selectedCert) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleKeyDown);
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedCert]);
 
   const go = (id) => {
     document
@@ -238,6 +399,7 @@ export default function Portfolio() {
         @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
         @keyframes floatUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
         @keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes modalFadeIn{from{opacity:0;transform:scale(0.96) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
         *{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth}
         ::-webkit-scrollbar{width:5px}
@@ -249,6 +411,8 @@ export default function Portfolio() {
         .nlnk:hover{color:#fff!important;background:rgba(123,47,247,0.18)!important}
         .mob-lnk:hover{color:#7b2ff7!important;padding-left:36px!important}
         .avatar{animation:floatUp 4s ease-in-out infinite}
+        .cert-card{transition:all 0.25s cubic-bezier(0.16,1,0.3,1);-webkit-tap-highlight-color:transparent}
+        .cert-card:active{transform:scale(0.98)!important}
       `}</style>
 
       {/* NAV */}
@@ -923,35 +1087,74 @@ export default function Portfolio() {
               {CERTIFICATES.map((c, idx) => (
                 <div
                   key={idx}
-                  className="hov-up hov-border"
-                  onClick={() => window.open(c.file, "_blank")}
+                  className="cert-card hov-up hov-border"
+                  onClick={() => setSelectedCert(c)}
                   style={{
                     background: "#12121e",
                     border: `1px solid ${c.color}30`,
                     borderRadius: 14,
-                    padding: mob ? 18 : 22,
+                    padding: mob ? "14px 16px" : "20px 22px",
                     display: "flex",
                     flexDirection: "column",
-                    gap: 12,
+                    gap: mob ? 10 : 12,
                     cursor: "pointer",
-                    transition: "all 0.3s ease",
+                    WebkitTapHighlightColor: "transparent",
                   }}
                 >
-                  <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                    <div style={{ fontSize: 28 }}>{c.icon}</div>
-                    <div style={{ flex: 1 }}>
-                      <div style={{ fontSize: 15, fontWeight: 700, color: "#f0f0f8", lineHeight: 1.3, marginBottom: 4 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: mob ? 10 : 12 }}>
+                    <div style={{ fontSize: mob ? 24 : 28 }}>{c.icon}</div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <div
+                        style={{
+                          fontSize: mob ? 14 : 15,
+                          fontWeight: 700,
+                          color: "#f0f0f8",
+                          lineHeight: 1.3,
+                          marginBottom: 2,
+                        }}
+                      >
                         {c.title}
                       </div>
-                      <div style={{ fontSize: 13, color: c.color, fontWeight: 600 }}>
+                      <div style={{ fontSize: mob ? 12 : 13, color: c.color, fontWeight: 600 }}>
                         {c.issuer}
                       </div>
                     </div>
                   </div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: 10, marginTop: "auto" }}>
-                    <span style={{ fontSize: 12, color: "#9090b0", fontWeight: 500 }}>{c.year}</span>
-                    <span style={{ fontSize: 12, color: ACC, fontWeight: 600, display: "flex", alignItems: "center", gap: 4 }}>
-                      View <span style={{ fontSize: 14 }}>↗</span>
+                  {c.skills && (
+                    <div
+                      style={{
+                        fontSize: 11,
+                        color: "#8080a0",
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                      }}
+                    >
+                      {c.skills}
+                    </div>
+                  )}
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      borderTop: "1px solid rgba(255,255,255,0.05)",
+                      paddingTop: 8,
+                      marginTop: "auto",
+                    }}
+                  >
+                    <span style={{ fontSize: 11, color: "#9090b0", fontWeight: 500 }}>{c.year}</span>
+                    <span
+                      style={{
+                        fontSize: 12,
+                        color: ACC,
+                        fontWeight: 600,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 4,
+                      }}
+                    >
+                      Preview 🔍
                     </span>
                   </div>
                 </div>
@@ -1150,6 +1353,307 @@ export default function Portfolio() {
           © 2026 Ranjith V. All rights reserved.
         </p>
       </footer>
+
+      {/* CERTIFICATE MINI POPUP MODAL */}
+      {selectedCert && (
+        <div
+          onClick={() => setSelectedCert(null)}
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(5, 5, 12, 0.88)",
+            backdropFilter: "blur(10px)",
+            WebkitBackdropFilter: "blur(10px)",
+            display: "flex",
+            alignItems: mob ? "flex-end" : "center",
+            justifyContent: "center",
+            padding: mob ? 0 : "24px",
+            zIndex: 99999,
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: "#131322",
+              border: mob
+                ? `1px solid ${selectedCert.color}45`
+                : `1px solid ${selectedCert.color}55`,
+              borderRadius: mob ? "22px 22px 0 0" : 18,
+              width: "100%",
+              maxWidth: mob ? "100%" : "860px",
+              height: mob ? "92vh" : "auto",
+              maxHeight: mob ? "92vh" : "90vh",
+              display: "flex",
+              flexDirection: "column",
+              boxShadow: mob
+                ? `0 -12px 40px rgba(0, 0, 0, 0.85), 0 0 30px ${selectedCert.color}20`
+                : `0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px ${selectedCert.color}25`,
+              overflow: "hidden",
+              animation: "modalFadeIn 0.25s ease-out",
+            }}
+          >
+            {/* Mobile Drag Indicator */}
+            {mob && (
+              <div
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  paddingTop: 8,
+                  paddingBottom: 2,
+                  background: "rgba(255, 255, 255, 0.02)",
+                }}
+              >
+                <div
+                  style={{
+                    width: 44,
+                    height: 4,
+                    borderRadius: 3,
+                    background: "rgba(255, 255, 255, 0.25)",
+                  }}
+                />
+              </div>
+            )}
+
+            {/* Modal Header */}
+            <div
+              style={{
+                padding: mob ? "10px 16px 12px" : "18px 24px",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: 12,
+                background: "rgba(255, 255, 255, 0.02)",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: 10, minWidth: 0, flex: 1 }}>
+                <span style={{ fontSize: mob ? 26 : 32, flexShrink: 0 }}>{selectedCert.icon}</span>
+                <div style={{ minWidth: 0, flex: 1 }}>
+                  <h3
+                    style={{
+                      fontSize: mob ? 14 : 18,
+                      fontWeight: 700,
+                      color: "#ffffff",
+                      margin: 0,
+                      lineHeight: 1.3,
+                      wordBreak: "break-word",
+                    }}
+                  >
+                    {selectedCert.title}
+                  </h3>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 4, flexWrap: "wrap" }}>
+                    <span style={{ fontSize: mob ? 11 : 13, color: selectedCert.color, fontWeight: 600 }}>
+                      {selectedCert.issuer}
+                    </span>
+                    <span
+                      style={{
+                        fontSize: 10,
+                        color: "#9090b0",
+                        background: "rgba(255,255,255,0.06)",
+                        padding: "1px 7px",
+                        borderRadius: 10,
+                      }}
+                    >
+                      {selectedCert.year}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Close Button */}
+              <button
+                onClick={() => setSelectedCert(null)}
+                style={{
+                  background: "rgba(255, 255, 255, 0.08)",
+                  border: "none",
+                  borderRadius: "50%",
+                  width: mob ? 34 : 38,
+                  height: mob ? 34 : 38,
+                  color: "#d0d0e8",
+                  fontSize: mob ? 16 : 18,
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                  transition: "all 0.2s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "rgba(255, 255, 255, 0.18)";
+                  e.currentTarget.style.color = "#ffffff";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255, 255, 255, 0.08)";
+                  e.currentTarget.style.color = "#d0d0e8";
+                }}
+                aria-label="Close"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Modal Body / Viewer */}
+            <div
+              style={{
+                flex: 1,
+                overflowY: "auto",
+                WebkitOverflowScrolling: "touch",
+                padding: mob ? "10px" : "18px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "#0c0c16",
+              }}
+            >
+              {selectedCert.type === "image" ? (
+                <img
+                  src={selectedCert.file}
+                  alt={selectedCert.title}
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: mob ? "54vh" : "62vh",
+                    borderRadius: 10,
+                    objectFit: "contain",
+                    boxShadow: "0 8px 30px rgba(0,0,0,0.5)",
+                  }}
+                />
+              ) : (
+                <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column" }}>
+                  <iframe
+                    src={selectedCert.file}
+                    title={selectedCert.title}
+                    style={{
+                      width: "100%",
+                      height: mob ? "44vh" : "62vh",
+                      border: "none",
+                      borderRadius: 10,
+                      backgroundColor: "#ffffff",
+                    }}
+                  />
+                  {mob && (
+                    <div
+                      style={{
+                        marginTop: 8,
+                        padding: "8px 12px",
+                        background: "rgba(255, 255, 255, 0.04)",
+                        borderRadius: 8,
+                        border: "1px dashed rgba(255, 255, 255, 0.12)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        gap: 8,
+                      }}
+                    >
+                      <span style={{ fontSize: 11, color: "#9595b5", lineHeight: 1.3 }}>
+                        Mobile browser?
+                      </span>
+                      <a
+                        href={selectedCert.file}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          fontSize: 11,
+                          fontWeight: 600,
+                          color: selectedCert.color,
+                          whiteSpace: "nowrap",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        Tap to View Full PDF ↗
+                      </a>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {/* Modal Footer */}
+            <div
+              style={{
+                padding: mob ? "12px 14px" : "14px 24px",
+                borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+                display: "flex",
+                flexDirection: mob ? "column" : "row",
+                alignItems: mob ? "stretch" : "center",
+                justifyContent: "space-between",
+                gap: mob ? 10 : 12,
+                background: "rgba(255, 255, 255, 0.02)",
+              }}
+            >
+              {selectedCert.skills && (
+                <div
+                  style={{
+                    fontSize: 11,
+                    color: "#8a8aa8",
+                    textAlign: mob ? "center" : "left",
+                  }}
+                >
+                  Skills: <strong style={{ color: "#d0d0e8" }}>{selectedCert.skills}</strong>
+                </div>
+              )}
+
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: mob ? "1fr 1fr" : "auto auto",
+                  gap: 10,
+                  width: mob ? "100%" : "auto",
+                }}
+              >
+                <a
+                  href={selectedCert.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: mob ? "11px 12px" : "9px 18px",
+                    borderRadius: 10,
+                    background: selectedCert.color,
+                    color: "#ffffff",
+                    fontSize: mob ? 12 : 13,
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 6,
+                    boxShadow: `0 4px 14px ${selectedCert.color}40`,
+                    textAlign: "center",
+                  }}
+                >
+                  Open Full ↗
+                </a>
+
+                <a
+                  href={selectedCert.file}
+                  download
+                  style={{
+                    padding: mob ? "11px 12px" : "9px 18px",
+                    borderRadius: 10,
+                    background: "rgba(255, 255, 255, 0.08)",
+                    color: "#e0e0f0",
+                    fontSize: mob ? 12 : 13,
+                    fontWeight: 600,
+                    textDecoration: "none",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 6,
+                    border: "1px solid rgba(255, 255, 255, 0.14)",
+                    textAlign: "center",
+                  }}
+                >
+                  Download ⬇
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
